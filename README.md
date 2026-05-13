@@ -6,11 +6,19 @@ This repository will contain the official implementation of our paper:
 
 **Temporal Recency Alignment Across Modules for Multimodal Emotion–Cause Pair Extraction**
 
-TReAM is a lightweight framework for **Multimodal Emotion–Cause Pair Extraction (MECPE)**. It addresses temporal inconsistency across modular MECPE systems by learning a shared dialogue-paced temporal scale and injecting it into both global pair reasoning and local speaker interaction modules.
+TReAM is a lightweight framework for **Multimodal Emotion-Cause Pair Extraction (MECPE)**. It addresses temporal inconsistency across modular MECPE systems by learning a shared dialogue-paced temporal scale and injecting it into both global pair reasoning and local speaker interaction modules.
+
+## Framework
+
+An overview of the proposed TReAM framework is provided in the figure below:
+
+**[View Framework Figure (PDF)](figures/Fig 1.pdf)**
+
+> Note: GitHub may not render PDF figures inline in the README preview. If needed, please open the PDF file directly.
 
 ## Overview
 
-Multimodal Emotion–Cause Pair Extraction aims to identify emotion utterances, cause utterances, and structured emotion-cause links in multi-speaker multimodal dialogues.
+Multimodal Emotion-Cause Pair Extraction aims to identify emotion utterances, cause utterances, and structured emotion-cause links in multi-speaker multimodal dialogues.
 
 Existing modular MECPE models often combine sequential aggregation and speaker-interaction modules. However, these modules may encode different temporal recency assumptions, resulting in cross-module temporal misalignment and unstable pair prediction.
 
@@ -28,12 +36,12 @@ Importantly, pair scoring is performed only through the KS path, while SG is use
 
 ## Main Features
 
-- Dialogue-adaptive temporal recency modeling.
-- Cross-module temporal alignment between sequential aggregation and speaker interaction.
-- Dual-path design separating pair-level reasoning and utterance-level prediction.
-- Support for text-only and multimodal settings.
-- Experiments on ECF and MECAD datasets.
-- Robust performance on sparse and non-local emotion-cause links.
+- Dialogue-adaptive temporal recency modeling
+- Cross-module temporal alignment between sequential aggregation and speaker interaction
+- Dual-path design separating pair-level reasoning and utterance-level prediction
+- Support for text-only and multimodal settings
+- Experiments on ECF and MECAD datasets
+- Robust performance on sparse and non-local emotion-cause links
 
 ## Method
 
@@ -72,6 +80,7 @@ TReAM/
 ├── models/               # Model implementation
 ├── modules/              # ATDG, KS, SG, and related components
 ├── scripts/              # Training and evaluation scripts
+├── figures/              # Figures used in the README and paper
 ├── utils/                # Utility functions
 ├── results/              # Experimental logs and outputs
 ├── requirements.txt      # Python dependencies

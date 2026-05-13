@@ -12,7 +12,7 @@ TReAM is a lightweight framework for **Multimodal Emotion-Cause Pair Extraction 
 
 An overview of the proposed TReAM framework is provided in the figure below:
 
-![TReAM framework](figures/Fig2.png)
+![TReAM framework](figures/framework.png)
 
 > Note: GitHub may not render PDF figures inline in the README preview. If needed, please open the PDF file directly.
 
